@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.navBar{
+  position: fixed;
+  width: 100vw;
+  height: 75px;
+  top: 0;
+  z-index: 1;
+  font-family: "Arial", "sans-serif";
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(220, 10%, 8%);
+  border-bottom: 2px solid hsla(180, 100%, 50%, 0.2);
+}
+.navItems{
+  color: hsl(0, 0%, 88%);
+  display: flex;
+  gap: 1rem;
+}
+.navItems a{
+  font-family: "Quantico", sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 88%);
+  padding: 0.5rem 1rem;
+  border: 2px solid hsl(0, 0%, 88%);
+  border-radius: 1.5rem;
+  transform: translateY(0) translateX(0);
+  transition: all 0.1s ease;
+}
+.navItems a:hover{
+  transform: translateY(-4px) translateX(-4px);
+  border: 2px solid hsl(180, 100%, 50%);
+  box-shadow: 4px 4px 0 hsl(180, 100%, 50%);
+}
+.navItems a:active{
+  box-shadow: 2px 2px 0 hsl(180, 100%, 50%);
+  transform: translateY(-2px) translateX(-2px);
+}
+.logo{
+  height: 50px;
+  padding: 0 0.5rem;
+}
+.logoAndTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+}
+.logoAndTitle h4{
+  font-family: "Audiowide", sans-serif;
+  color: hsl(180, 100%, 70%);
+  font-weight: normal;
+}
+.profilePicContainer{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.ppcCartAndProfilePic{
+  display: flex;
+  align-items: center;
+}
+.profilePic, .logoutButton{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profilePic{
+  padding: 0 1rem;
+}
+.logoutButton{
+  align-self: center;
+}
+.mobileTitle{
+  display: none;
+}
+.navLoginButton{
+  width: 100px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: hsla(60, 100%, 70%, 0.5);
+  color: hsl(0, 0%, 0%);
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  transition: background-color 0.1s ease;
+}
+.navLoginButton:hover{
+  background-color: hsl(60, 100%, 70%);
+}
+.loginNav{
+  width: min-content;
+  align-self: center;
+  display: none;
+  visibility: hidden;
+  transition: visibility 0.2s ease;
+}
+
+
+.profileMenu{
+  background-color: hsl(220, 10%, 8%);
+  position: absolute;
+  top: 75px;
+  right: 0;
+  height: min-content;
+  text-align: center;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem hsla(220, 10%, 8%, 0.5);
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-top: 2px solid hsla(180, 100%, 50%, 0.2);
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: transform 0.2s ease-out, visibility 0.2s ease-out, opacity 0.2s ease-out;
+}
+.showMenu{
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+.profileMenu button{
+  width: auto;
+  margin: 0;
+  background-color: hsl(270, 40%, 50%);
+}
+.profileMenu a{
+  color: hsl(0, 0%, 80%);
+  font-family: "Quantico", sans-serif;
+  font-size: 1.5rem;
+}
+.logoutButton{
+  
+}
+.darkLightToggle{
+  /*button to toggle dark mode*/
+}
+.darkMode{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.darkMode a{
+  flex: 1;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 850px){
+  .navBar{
+    justify-content: start;
+  }
+  .logoAndTitle{
+    flex: 1;
+  }
+  .navItems{
+    z-index: 1;
+    background-color: hsl(220, 10%, 8%);
+    border-top: 2px solid hsla(180, 100%, 50%, 0.2);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 5px 0 10px hsl(180, 100%, 50%);
+    /*display: none;*/
+    pointer-events: none;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, visibility 0s ease, transform 0.2s ease;
+  }
+  .navItems a{
+    width: max-content;
+    align-self: center;
+  }
+  .open{
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    /*display: flex;*/
+  }
+  .showNav{
+    display: flex;
+    align-self: center;
+    border-radius: 1.5rem;
+    visibility: visible;
+  }
+  
+  .mobileTitle{
+    display: block;
+    color: hsl(0, 0%, 80%);
+  }
+  .hamburger{
+    width: 75px;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    /*padding: 0.5rem 1rem;*/
+    color: hsl(0, 0%, 80%);
+  }
+  .profilePicContainer{
+    width: min-content;
+  }
+}

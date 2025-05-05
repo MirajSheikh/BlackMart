@@ -1,0 +1,104 @@
+.cardNlogin{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  margin-top: 150px;
+  max-width: 900px;
+  box-shadow: 0 0 1rem hsla(180, 100%, 50%, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+.cardNlogin:hover{
+  box-shadow: 0 0 1rem hsl(60, 100%, 70%);
+}
+
+.card{
+  background-color: hsl(220, 10%, 8%);
+}
+
+.login{
+  font-family: "Arial", "sans-serif";
+  color: white;
+  background-color: hsl(220, 9%, 11%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 2rem 0;
+}
+.login img{
+  width: 100px;
+}
+.login h2{
+  color: hsl(180, 100%, 70%);
+  font-size: 2rem;
+  font-family: "Audiowide", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+input[type=email], input[type=password], input[type=text], input[type=number]{
+  background-color: hsl(220, 15%, 20%);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 90%);
+  font-size: 1.2rem;
+}
+
+::placeholder{
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 88%);
+}
+form h4{
+  font-size: 1.2rem;
+  text-align: right;  
+  color: hsl(0, 0%, 88%);
+}
+.subTitle{
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(0, 0%, 88%);
+}
+a{
+  text-decoration: none;
+  color: hsl(180, 100%, 50%);
+}
+form button{
+  cursor: pointer;
+  border: 2px solid hsl(180, 100%, 70%);
+  border-radius: 5px;
+  color: hsl(0, 0%, 88%);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: hsla(180, 100%, 70%, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 1.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+  transition: border 0.1s ease;
+}
+form button:hover{
+  border: 2px solid hsl(60, 100%, 70%);
+}
+form button:active{
+  background-color: hsl(60, 100%, 70%);
+  color: hsl(0, 0%, 20%);
+}
+
+@media (max-width: 768px){
+  .cardNlogin{
+    display: flex;
+    justify-content: center;
+    width: min-content;
+  }
+  .card{
+    display: none;
+  }
+  .login{
+    width: 350px;
+    border-radius: 1rem;
+  }
+}

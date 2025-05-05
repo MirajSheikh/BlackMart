@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rubik+Glitch&family=Train+One&display=swap&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&family=Iceland&family=Nova+Round&family=Space+Grotesk:wght@300..700');
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(220, 10%, 7%);
+  background-image: 
+    linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(220, 10%, 8%, 1)),
+    url("./assets/landingPageBackground2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

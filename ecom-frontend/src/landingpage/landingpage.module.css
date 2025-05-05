@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.landingPageContainer{
+  margin-top: 75px;
+}
+.welcomeBanner{
+  background-color: hsl(0, 0%, 0%);
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.welcomeBanner div{
+  flex: 1;
+}
+.welcomeBanner h1{
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+}
+.welcomeBanner h2{
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.5rem;
+}
+.welcomeBanner img{
+  height: 500px;
+}
+.homeButton{
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Press Start 2P", system-ui;
+  color: hsl(0, 100%, 100%);
+  background-color: hsla(180, 100%, 70%, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid hsl(180, 100%, 40%);
+  border-radius: 10px;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: border 0.1s ease;
+}
+.homeButton:hover{
+  border: 2px solid hsl(60, 100%, 70%);
+}
+.homeButton:active{
+  background-color: hsl(60, 100%, 70%);
+  color: hsl(0, 0%, 0%);
+}
+.offerPanel{
+  width: 90vw;
+  margin: auto;
+}
+.randomItemsSlider p{
+  font-family: "Tektur", sans-serif;
+  font-size: 2.5rem;
+  color: hsl(180, 100%, 70%);
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2rem;
+  margin: 2rem 0;
+}
+.specialOffer{
+
+}
+
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  background-color: hsla(0, 100%, 100%, 0.1);
+  backdrop-filter: blur(10px);
+  margin: 3rem 0;
+  padding: 2rem;
+}
+.titleAndGrid{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.grid4{
+  align-self: center;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 1rem;
+  padding: 1rem;
+}
+.gridTitle{
+  /*font-family: "Press Start 2P", system-ui;*/
+  font-family: "Tektur", sans-serif;
+  /*font-family: "Rubik Glitch", system-ui;*/
+  /*font-family: "Train One", system-ui;*/
+  /*font-family: "Audiowide", sans-serif;*/
+  color: hsl(180, 100%, 70%);
+  letter-spacing: 0.2rem;
+
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.block h4{
+  margin: 0;
+  text-align: center;
+  font-family: "Quantico", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.block img{
+  height: 200px;
+}
+
+
+@media(max-width: 1000px){
+  .welcomeBanner h1{
+    font-size: 4rem;
+  }
+}
+
+@media(max-width: 860px){
+  .welcomeBanner h1{
+    font-size: 3rem;
+  }
+}

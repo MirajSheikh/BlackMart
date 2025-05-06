@@ -1,11 +1,12 @@
-BlackMart - Your Futuristic Online Store
+**BlackMart** - Your Futuristic Online Store
+
 
 System/Software Requirements ->
-Windows 10/11 (MacOS not tested)
-Intellij Idea Community Edition (for running the spring boot application)
-VS Code or any other code editor
-npm (for running the vite project(React.js))
-MySQL workbench or command line (database)
+1. Windows 10/11 (MacOS not tested)
+2. Intellij Idea Community Edition (for running the spring boot application)
+3. VS Code or any other code editor
+4. npm (for running the vite project(React.js))
+5. MySQL workbench or command line (database)
 
 I have included the database file [ecomdb.sql] 
 You need to import it into your MySQL for the website to properly run on your device.

@@ -5,7 +5,7 @@ System/Software Requirements ->
 1. Windows 10/11 (MacOS not tested)
 2. Intellij Idea Community Edition (for running the spring boot application)
 3. VS Code or any other code editor
-4. npm (for running the vite project(React.js))
+4. npm install vite (for running the vite project(React.js))
 5. MySQL workbench or command line (database)
 
 I have included the database file [ecomdb.sql] 
